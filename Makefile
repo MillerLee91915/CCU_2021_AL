@@ -1,5 +1,4 @@
-# sample makefile
-all:test0.s
-	arm-elf-gcc -g -O0 test0.s -o test0.exe
+all:hw4_test.s numsort.s
+	arm-none-eabi-gcc -g ./hw4_test.s  ./numsort.s -o hw4
 clean:
-	rm -f test0.exe
+	rm -f hw4
