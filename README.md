@@ -27,5 +27,6 @@ numsort.s:
 接著再把陣列起始位址存到 r10。
 
 ## 如何編譯
-
+arm-none-eabi-gcc -g ./hw4_test.s  ./numsort.s -o hw4
 ## 如何執行
+arm-none-eabi-insight ./hw4
